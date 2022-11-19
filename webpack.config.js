@@ -15,6 +15,7 @@ function config(env, argv) {
     devtool: "source-map",
     entry: {
       index: "./src/index.ts",
+      options: "./src/options.tsx",
     },
     module: {
       rules: [
