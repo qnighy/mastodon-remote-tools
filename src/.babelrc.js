@@ -18,5 +18,15 @@ const config = {
       version: "^3.26.1",
     }],
   ],
+  env: {
+    test: {
+      plugins: [
+        ["node-cjs-interop", {
+          packages: ["@reduxjs/toolkit"],
+          loose: true,
+        }],
+      ],
+    },
+  },
 };
 export { config as default };
