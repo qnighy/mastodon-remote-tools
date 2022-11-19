@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
 export type AccountsState = {
-  readonly accounts: Record<string, Account>;
+  readonly accounts: Readonly<Record<string, Account>>;
 };
 export type Account = {
   /** ID in the form of `foo@bar.baz` */
