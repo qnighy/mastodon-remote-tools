@@ -34,6 +34,12 @@ function config(env, argv) {
         ...esmRulesExt(),
       ],
     },
+    output: {
+      filename: "[name].js",
+      library: {
+        type: "module",
+      },
+    },
     plugins: [
       new CopyPlugin({
         patterns: [
@@ -44,6 +50,9 @@ function config(env, argv) {
         ],
       }),
     ],
+    experiments: {
+      outputModule: true,
+    },
   };
 };
 export { config as default };
