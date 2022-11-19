@@ -6,7 +6,7 @@ const config = {
   targets: "defaults, not ie 11, not ie_mob 11",
   presets: [
     "@babel/env",
-    "@babel/react",
+    ["@babel/react", { runtime: "automatic" }],
     ["@babel/typescript", { allowDeclareFields: true }],
   ],
   plugins: [

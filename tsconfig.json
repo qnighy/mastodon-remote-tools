@@ -3,7 +3,7 @@
     "composite": true,
     "target": "esnext",
     "lib": ["dom"],
-    "jsx": "react",
+    "jsx": "react-jsx",
     "useDefineForClassFields": true,
     "moduleDetection": "auto",
     "module": "esnext",
