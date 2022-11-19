@@ -11,6 +11,8 @@ function config(env, argv) {
   const { mode = "production" } = argv;
   return {
     mode,
+    // Avoid eval-based devtool because CSP is strict by default in extensions
+    devtool: "source-map",
     entry: {
       index: "./src/index.ts",
     },
