@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import { Page } from "../options/Page.js";
+import { App } from "../options/App.js";
 
 const root = createRoot(document.querySelector("#root")!);
-root.render(<Page />);
+root.render(<App />);
