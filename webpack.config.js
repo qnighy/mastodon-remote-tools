@@ -1,5 +1,7 @@
 // @ts-check
 
+import CopyPlugin from "copy-webpack-plugin";
+
 /**
  * @param env {WebpackEnv}
  * @param argv {WebpackArgv}
@@ -22,6 +24,16 @@ function config(env, argv) {
         ...esmRulesExt(),
       ],
     },
+    plugins: [
+      new CopyPlugin({
+        patterns: [
+          {
+            from: "manifest.json",
+            to: "manifest.json",
+          },
+        ],
+      }),
+    ],
   };
 };
 export { config as default };
