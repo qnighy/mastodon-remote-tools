@@ -1,4 +1,12 @@
 {
   "name": "mastodon-remote-tools",
-  "packageManager": "yarn@3.3.0"
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "yarn@3.3.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
 }
