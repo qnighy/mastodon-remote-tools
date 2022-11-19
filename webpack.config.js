@@ -17,6 +17,13 @@ function config(env, argv) {
       index: "./src/entries/index.ts",
       options: "./src/entries/options.tsx",
     },
+    resolve: {
+      extensionAlias: {
+        '.js': ['.ts', '.tsx', '.jsx', '.js'],
+        '.cjs': ['.cts', '.cjs'],
+        '.mjs': ['.mts', '.mjs'],
+      },
+    },
     module: {
       rules: [
         {
