@@ -30,8 +30,8 @@ function config(env, argv) {
       new CopyPlugin({
         patterns: [
           {
-            from: "manifest.json",
-            to: "manifest.json",
+            from: "public/*",
+            to: "[name][ext]",
           },
         ],
       }),
