@@ -14,8 +14,8 @@ function config(env, argv) {
     // Avoid eval-based devtool because CSP is strict by default in extensions
     devtool: "source-map",
     entry: {
-      index: "./src/index.ts",
-      options: "./src/options.tsx",
+      index: "./src/entries/index.ts",
+      options: "./src/entries/options.tsx",
     },
     module: {
       rules: [
