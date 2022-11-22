@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { add, load, save } from "./accounts.js";
-import type { State } from "./store.js";
+import { add, load, save } from "../store/accounts.js";
+import type { State } from "../store/store.js";
 
 export function Page(): React.ReactElement | null {
   return (

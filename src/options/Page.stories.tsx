@@ -1,6 +1,6 @@
 import { ComponentStoryObj as ComponentStory, ComponentMeta } from '@storybook/react';
 import { Provider } from 'react-redux';
-import { configureDefaultStore } from './store.js';
+import { configureDefaultStore } from '../store/store.js';
 import { Page } from './Page.js';
 
 type Meta = ComponentMeta<typeof Page>;

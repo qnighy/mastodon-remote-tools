@@ -1,5 +1,5 @@
 import { Provider as ReduxProvider } from "react-redux";
-import { configureDefaultStore } from "./store.js";
+import { configureDefaultStore } from "../store/store.js";
 import { Page } from "./Page.js";
 
 export function App(): React.ReactElement | null {
