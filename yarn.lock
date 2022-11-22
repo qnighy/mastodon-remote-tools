@@ -3701,6 +3701,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/chrome@npm:^0.0.114":
+  version: 0.0.114
+  resolution: "@types/chrome@npm:0.0.114"
+  dependencies:
+    "@types/filesystem": "*"
+    "@types/har-format": "*"
+  checksum: 7b7c7d7ae72e54011328709b23f6bb2b15e8626af01e7577deae34fd1a0ec52f3f911f9eb9eeb49110a6816ee993450119eb889a286e077c5ce194878415d63f
+  languageName: node
+  linkType: hard
+
+"@types/chrome@npm:^0.0.202":
+  version: 0.0.202
+  resolution: "@types/chrome@npm:0.0.202"
+  dependencies:
+    "@types/filesystem": "*"
+    "@types/har-format": "*"
+  checksum: 729f283a3e4a250b20e58eb2f529938d8e87ffb98704c95c782d3e92bffb483c9f107501238cb211c96e2c449684a923a4d38e91d0d914fbfc6ce4973ea3dd6a
+  languageName: node
+  linkType: hard
+
 "@types/eslint-scope@npm:^3.7.3":
   version: 3.7.4
   resolution: "@types/eslint-scope@npm:3.7.4"
@@ -3735,6 +3755,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/filesystem@npm:*":
+  version: 0.0.32
+  resolution: "@types/filesystem@npm:0.0.32"
+  dependencies:
+    "@types/filewriter": "*"
+  checksum: 4b9079d200a3b241722b90e1c5806c4b32c4dac87d42a1c7ef76a2c0dafdbe7d5f1a379b873ad5de73622b44de6599e1522908f67b938d54e785bd1c36e302a0
+  languageName: node
+  linkType: hard
+
+"@types/filewriter@npm:*":
+  version: 0.0.29
+  resolution: "@types/filewriter@npm:0.0.29"
+  checksum: 0c58aa875c2c245be7dbc42b20212f3203e13d11ec013a4a5cd0febf0e8b87214be5882c05ff9d7bdf0398f145a4fdbc24b7e6cf7b094e134a3b4c7a0598502f
+  languageName: node
+  linkType: hard
+
 "@types/glob@npm:*":
   version: 8.0.0
   resolution: "@types/glob@npm:8.0.0"
@@ -3761,6 +3797,13 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: d076bb61f45d0fc42dee496ef8b1c2f8742e15d5e47e90e20d0243386e426c04d4efd408a48875ab432f7960b4ce3414db20ed0fbbfc7bcc89d84e574f6e045a
+  languageName: node
+  linkType: hard
+
+"@types/har-format@npm:*":
+  version: 1.2.9
+  resolution: "@types/har-format@npm:1.2.9"
+  checksum: 61fbcfa402f3d8dd9ed7d3ccf8bb4bd1e27ac0f599f07c7681667dcd107bc2df82aeff8926d2251eea9e288b4f7068c38aa1fd46799ce18c015c4472862379b1
   languageName: node
   linkType: hard
 
@@ -9818,6 +9861,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jest-chrome@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "jest-chrome@npm:0.8.0"
+  dependencies:
+    "@types/chrome": ^0.0.114
+  peerDependencies:
+    jest: ^26.0.1 || ^27.0.0
+  checksum: c34b3be1c7c13d08eafd8505d130d1dad3339836cb77d3997e09cf1dc2be618a5ca1f685190692d9872b8a1ce0f04d204b7b66476fea275b0bcf54779ebc5a72
+  languageName: node
+  linkType: hard
+
 "jest-circus@npm:^29.3.1":
   version: 29.3.1
   resolution: "jest-circus@npm:29.3.1"
@@ -10978,6 +11032,7 @@ __metadata:
     "@testing-library/react": ^13.4.0
     "@testing-library/user-event": ^14.4.3
     "@types/babel__core": ^7.1.20
+    "@types/chrome": ^0.0.202
     "@types/react": ^18.0.25
     "@types/react-dom": ^18.0.9
     "@types/testing-library__jest-dom": ^5.14.5
@@ -10989,6 +11044,7 @@ __metadata:
     copy-webpack-plugin: ^11.0.0
     core-js-pure: ^3.26.1
     jest: ^29.3.1
+    jest-chrome: ^0.8.0
     jest-environment-jsdom: ^29.3.1
     react: ^18.2.0
     react-dom: ^18.2.0
