@@ -16,6 +16,7 @@ function config(env, argv) {
     entry: {
       background: "./src/entries/background.ts",
       options: "./src/entries/options.tsx",
+      popup: "./src/entries/popup.tsx",
     },
     resolve: {
       extensionAlias: {
